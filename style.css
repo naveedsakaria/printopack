@@ -1,0 +1,455 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #e6ffff;
+    background-color: #e6f2ff;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+/* Start Font Face Import */
+@keyframes example {
+    from {background-color: #e6ffff;}
+    to {background-color: #e6f2ff;}
+  }
+@font-face {
+    font-family: 'pop-logo';
+    src: url('Fonts/Montserrat-Regular.otf');
+}
+@font-face {
+    font-family: 'pop-matter';
+    src: url('fonts/Philosopher-Bold.ttf');
+}
+@font-face{
+    font-family: 'pop-1';
+    src: url('fonts/Poppins-Black.otf');
+}
+@font-face {
+    font-family: 'pop-2';
+    src: url('fonts/Poppins-Light.otf');
+}
+@font-face{
+    font-family: 'Lemonada', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+}
+/* End Font Face Import */
+
+/* Navigation Section */
+.nvd_nav  {
+    padding: 0px;
+    background-color: white !important;
+    border-bottom: 5px solid rgb(247,178,57);
+}
+.nvd_nav .nav-item.active .nav-link,
+.nvd_nav .nav-item .nav-link:active,
+.nvd_nav .nav-item .nav-link:focus,
+.nvd_nav .nav-item:hover .nav-link {
+    color: rgb(2,3,92) !important;
+    background-color: white !important;
+}
+.nvd-link, .nav-item a{
+    color: rgb(159, 159, 161) !important;
+    font-size: 22px !important;
+    font-weight: bolder !important;
+    font-family: pop-2 !important;
+}
+.faizan {
+    width: 18%;
+}
+/* Animation Logo */
+img.faizan{
+    animation-name: fade, shrink;
+    animation-duration        : 0.50s      , 0.53s     ;
+    animation-iteration-count : infinite  , infinite  ;
+    animation-direction       : alternate , alternate ;
+}
+@keyframes fade {
+    from { opacity   : 1; }
+    to   { opacity   : 0.50; }
+}
+@keyframes shrink {
+    from { transform : scale(1); }
+    to   { transform : scale(0.75); }
+}
+/* Animation End */
+
+/* Social Icons */
+.list-unstyled {
+    list-style: none;
+    margin-right: 10px;
+}
+.list-inline li {
+    display: inline-block;
+    margin-top: 15px;
+    
+}
+.social-icons .fa{
+	font-size: 1.2em;
+}
+.social-icons .fa{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+}
+.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active{ 
+	-webkit-transform: scale(1.2) rotate(360deg);
+	-moz-transform: scale(1.2) rotate(360deg);
+	-ms-transform: scale(1.2) rotate(360deg);
+	-o-transform: scale(1.2) rotate(360deg);
+	transform: scale(1.2) rotate(360deg);
+}
+.social-icons .fa-facebook{
+    background-color:#3C599F;
+    color: white;
+}
+.social-icons .fa-twitter{
+    background-color:#32CCFE; 
+    color: white;
+}  
+.social-icons .fa-whatsapp{
+    background-color:#25D366; 
+    color: white;
+}  
+.social-icons .fa-instagram{
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+    color: white;
+}  
+/* End Social Icons */
+
+/* End Navigation POP */
+
+
+/* Start Slid Banner POP */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+/* End Slide Banner POP */
+
+/* Start Media Screen POP */ 
+@media screen and (max-width: 480px) {
+    .faizan {
+        width: 40% !important;
+    }
+    .jun-heading{
+        font-size: 32px !important;
+    }
+    .jun-wc-text{
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .faizan{
+        width: 35% !important;
+    }
+    .jun-heading{
+        font-size: 40px !important;
+    }
+}
+@media screen and (max-width: 780px) {
+    .faizan{
+        width: 30% !important;
+    }
+}
+
+/* End Media Screen POP */
+
+
+/*-- Strart POP Welcome Section --*/
+.junaid-wc{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.card-wc {
+    padding-top: 10px;
+    background-image: url(images/work.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
+.card-wc:hover {
+    background-color: rgb(240, 242, 245);
+    transition: 2s cubic-bezier(0.6, -0.28, 0.735, 0.045);   
+    cursor: pointer;
+}
+.jun-heading {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 48px;
+    font-family: pop-logo !important;
+    color: darkblue;
+    word-spacing: 3px;
+}
+.jun-wc-text {
+    font-size: 16px;
+    word-spacing: 2px;
+    font-family: pop-2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*-- Pop Welcome Section End --*/
+
+/*-- Manufacturing Section Start --*/
+.pop-des{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.card-manuf {
+    border: none;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    cursor: pointer;
+}
+.jun-manufacturing-des{
+    padding: 5px;
+}
+.jun-manufacturing-des h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.jun-manufacturing-des p {
+    font-size: 15px;
+    padding: 0px;
+}
+.jun-pic-relation{
+    padding: 5px;
+}
+.jun-pic-relation img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+/*-- Manufacturing Section End --*/
+
+
+/*-- Clients Logo Area Start --*/
+.brands {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.brands_slider_container {
+    height: 100px;
+    padding-left: 110px;
+    padding-right: 100px
+}
+
+.brands_slider {
+    height: 100%;
+    margin-top: 15px
+}
+
+.brands_item {
+    height: 100%;
+}
+
+.brands_item img {
+    max-width: 115px;
+    height: 75px;
+}
+
+.brands_nav {
+    position: absolute;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.brands_nav i {
+    color: rgb(210, 210, 210);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.brands_nav:hover i {
+    color: rgb(10, 56, 129);
+}
+#brands-heading {
+    font-family: pop-1 !important;
+    text-shadow: 2px 2px 2px rgb(247,150,0);
+    color: rgb(10, 56, 129);
+    text-align: center;
+    padding-top: 30px;
+    font-size: 32px;
+    font-weight: bold !important;
+}
+.brands_prev {
+    left: 100px;   
+}
+.brands_next {
+    right: 100px;   
+}
+.card-client{
+    border-radius: 10px 80px 10px 80px;
+    border: none;
+    box-shadow: 0px 0px 7px 1px lightgrey;
+}
+/*-- Client Logo End */
+
+
+/*-- Footer Section --*/
+.pop-footer {
+    background-color: rgb(41, 61, 61);
+    padding-top: 15px;
+}
+.pop-develop {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    float: left;
+    font-family: 'Lemonada', cursive;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+.pop-rights {
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+/*-- Footer Section End --*/
+
+/* Produts Page Start */
+.pop-products{
+    padding: 50px;
+}
+.pro-card {
+    background-color: rgb(217, 217, 217);
+    color: rgb(10, 38, 153);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+.pro-card:hover {
+    background-color: rgb(77, 77, 77);
+    color: whitesmoke;
+    transition: 1s ease-in;
+}
+.pro-card, .btn  {
+    text-align: right !important;
+}
+
+.card-body p{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-title{
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.product-head {
+    text-align: center !important;
+    font-family: pop-1;
+    color: rgb(2,3,92);
+    padding: 30px;
+    word-spacing: 15px !important;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgb(247,150,0 );
+    text-decoration: underline;
+}
+/*-- Product page End */
+
+/*-- About Page Start --*/
+.pop-about {
+    padding: 70px;    
+    /*position: relative;*/
+}
+/*.pop-about::after{
+  content: "";
+  background: url(Images/about.jpg);
+  background-repeat: no-repeat; 
+ background-color: rgb(20, 31, 31);
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: -1;
+}*/
+.top-hrading-about{
+    font-family: pop-matter;
+    text-decoration: underline;
+    color: rgb(10, 56, 129);
+    padding-left: 80px; 
+}
+.text-about p{
+    font-family: sans-serif;
+    font-size: 18px;
+    word-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(41, 61, 61);
+  }
+/*-- About Page End --*/
+
+
+/*-- Contact Page Strart --*/
+.map-container-section {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container-section iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  .nav-c{
+    color: white !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 7px;
+    font-size: 24px;
+    box-shadow: 0px 5px 5px #aba9a9;
+}
+.form-header{
+    margin-top: -40px;
+    height:80px;
+    width: 100%;
+    box-shadow: 5px 5px 10px #aba9a9;
+    float: left;
+    position: relative;
+    bottom: 10px;
+}
+.mt-2 {
+    text-align: center;
+    padding-top: 13px;
+    font-size: 30px;
+    color: white;
+}
+/*-- Contact Page End --*/
